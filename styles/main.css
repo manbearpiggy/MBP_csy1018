@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.body_bg {
+  background: #89cff0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header h2, p {
+  width: 50%;
+}
+
+.header p {
+  text-align: center;
+}
+
+.header h2 {
+  margin-left: 3%;
+}
+
+
+
+.main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main ul li {
+  width: 20%;
+  text-align: center;
+  background: rgb(40, 140, 250);
+  margin: 10% 0;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.main ul li a {
+  text-decoration: none;
+
+}
