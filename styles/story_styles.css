@@ -33,7 +33,7 @@ body {
     background: #198dc3;
     font-weight: 400;
     border-radius: 0 0 5px 5px;
-    box-shadow: 4px 7px #12678f;
+    box-shadow: 1px 2px 5px #12678f;
     opacity: 0.75;
     cursor: pointer;
 }
@@ -74,32 +74,13 @@ body {
     opacity: 1;
 }
 
-.navbar li:active .story {
-    transform: translateX(2px) translateY(2px);
-    transition: 0.15s;
-}
-
-.navbar li:active .home {
-    transform: translateX(2px) translateY(2px);
-    transition: 0.15s;
-}
-
-.navbar li:active .education {
-    transform: translateX(2px) translateY(2px);
-    transition: 0.15s;
-}
-
-.navbar li:active .contact {
+.navbar li:active .story, .navbar li:active .home, .navbar li:active .education, .navbar li:active .contact {
     transform: translateX(2px) translateY(2px);
     transition: 0.15s;
 }
 
 .navbar li:active {
   transform: translateX(2px);
-  box-shadow: 2px 7px #12678f;
+  box-shadow: 0px 0px 2px #12678f;
   transition: 0.15s;
-}
-
-.navbar li {
-  display: none;
 }

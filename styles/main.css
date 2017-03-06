@@ -12,7 +12,6 @@ body {
 
 .main {
     padding: 2% 0;
-    font-size: 1.25em;
 }
 
 .hi {
@@ -22,7 +21,11 @@ body {
 }
 
 .main div {
-    text-align: center;
+  text-align: center;
+}
+
+.intro {
+    font-size: 1.75em;
 }
 
 .main img {
@@ -43,9 +46,9 @@ body {
 
 .main ul li {
     width: 25%;
-    font-size: 20px;
+    font-size: 1.5em;
     background: #198dc3;
-    box-shadow: 4px 7px #12678f;
+    box-shadow: 3px 4px 5px #12678f;
     opacity: 0.75;
     cursor: pointer;
     font-weight: 400;
@@ -68,8 +71,8 @@ body {
 }
 
 .main ul li:active {
-    box-shadow: 2px 5px #12678f;
-    transform: translateY(2px) translateX(2px);
+    box-shadow: 2px 3px 2px #12678f;
+    transform: translateY(1px) translateX(1px);
     transition: 0.1s;
 }
 
@@ -87,12 +90,12 @@ body {
 .fa {
     padding: 1.5%;
     font-size: 1em;
-    width: 4%;
+    width: 2%;
     text-align: center;
     text-decoration: none;
     margin: 5px 4px;
     border-radius: 5px;
-    box-shadow: 2px 2px #12678f;
+    box-shadow: 2px 2px 4px #12678f;
 }
 
 .fa:hover {
@@ -100,7 +103,7 @@ body {
 }
 
 .fa:active {
-    box-shadow: 1px 1px #12678f;
+    box-shadow: 1px 1px 1px #12678f;
     transform: translateY(1px) translateX(1px);
     transition: 0.1s;
 }
@@ -139,6 +142,57 @@ body {
   }
 
   .footer {
-    padding: 5%;
+    padding: 3%;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 200px) {
+  body {
+      background-image: url(../images/cloud.png), url(../images/cloud.png);
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 30% 25%, 70% 25%;
+      background-size: 25%;
+  }
+
+.main {
+  padding: 2% 0 2% 0;
+}
+
+.hi {
+  font-size: 6em
+}
+
+.intro {
+  font-size: 1.5em;
+}
+
+.main img {
+  width: 30%;
+  margin: 0 0 5% 35%;
+}
+
+  .main ul {
+    flex-direction: column;
+    margin: 0 20%;
+  }
+
+  .main ul li {
+    width: 100%;
+    font-size: 1.5em;
+
+  }
+
+  .footer {
+    padding: 2%;
+  }
+
+  .footer p {
+    font-size: 1.20em;
+      margin: 2% 1% 0 1%;
+  }
+
+  .fa {
+    padding: 2% 1%;
+    width: 7%;
   }
 }
