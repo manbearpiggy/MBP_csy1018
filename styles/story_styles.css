@@ -54,7 +54,6 @@ body {
 
 .story {
     padding: 50% 0;
-
 }
 
 .education {
@@ -83,4 +82,9 @@ body {
   transform: translateX(2px);
   box-shadow: 0px 0px 2px #12678f;
   transition: 0.15s;
+}
+
+.navbar .storypage {
+  background: #12678f;
+  box-shadow: 2px 2px 2px #0c415b;
 }
