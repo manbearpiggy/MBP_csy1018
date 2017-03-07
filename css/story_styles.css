@@ -5,28 +5,40 @@ body {
   background: #43b3e7;
   background-image: url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 5% 40%, 30% 30%, 70% 30%, 95% 40%;
+  background-position: 5% 45%, 30% 30%, 70% 30%, 95% 45%;
   background-size: 20%;
+  font-size: 100%;
 }
 
-.header {
-  width: 95%;
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
 }
 
 
 .header .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
-  margin: 0 0 10% 0;
+  margin: 0 0 5% 0;
+  padding: 0;
 }
 
 .nav li {
-  width: 10%;
+  width: 5%;
   text-align: center;
   opacity: 0.75;
   background: #198dc3;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px;
+  transition: none;
+  font-weight: 700;
+  box-shadow: 2px 3px 5px #12678f;
 }
 
 .nav li a {
@@ -35,23 +47,58 @@ body {
 
 .nav li a div {
   color: white;
+  border-radius: 0px 0px 5px 5px;
 }
 
-.section1 {
+.nav li:hover {
+  opacity: 1;
+}
+
+.home {
+  padding: 70% 0;
+}
+
+.story {
+  background: #0e4e6c;
+  opacity: 0.9;
+  padding: 35% 0;
+}
+
+.contact {
+  padding: 10% 0;
+}
+
+.cv {
+  padding: 95% 0;
+}
+
+.nav li a div:active {
+  transform: translateX(1px) translateY(1px);
+}
+
+.section {
   background: white;
-  margin: 0 5%;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 2px;
+  margin: 0 2.5% 5% 2.5%;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  padding: 4% 2%;
+  font-size: 1em;
+  line-height: 1.25;
+  box-shadow: 2px 2px 20px #198dc3;
 }
 
 .article_title h2 {
   text-align: center;
+  font-size: 1.625em;
+  color: #105b7e;
+  line-height: 1.15384615;
+  margin-bottom: 2%;
+  text-shadow: 1px 1px 1px #198dc3;
 }
 
-.article1 {
-  color: #198dc3;
-  padding: 2% 2%;
-  margin:  0 0 5% 0;
+.paragraph1, .paragraph2 {
+  color: #105b7e;
+  font-size: 1em;
 }
 
 .footer {
@@ -100,4 +147,45 @@ body {
 .fa-youtube {
     background: #43b3e7;
     color: white;
+}
+
+
+@media (max-width: 1500px) and (min-width: 1100px) {
+  .nav li {
+    width: 7.5%;
+  }
+
+  .home {
+    padding: 70% 0;
+  }
+
+  .story {
+    padding: 50% 0;
+  }
+
+  .contact {
+    padding: 20% 0;
+  }
+
+  .cv {
+    padding: 100% 0;
+  }
+}
+
+@media (max-width: 1099px) and (min-width: 800px) {
+  .nav li {
+    width: 10%;
+  }
+
+  .story {
+    padding: 50%;
+  }
+
+  .footer {
+    padding: 3% 1%;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 200px) {
+
 }
