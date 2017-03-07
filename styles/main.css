@@ -131,22 +131,22 @@ body {
   }
 }
 
-@media (max-width: 1199px) and (min-width: 800px) {
+@media (max-width: 1199px) and (min-width: 785px) {
 
   .main img {
     margin-top: 2%;
   }
 
   .main ul li {
-    margin: 15% 0;
+    margin: 10% 0;
   }
 
   .footer {
-    padding: 3%;
+    padding: 2% 0;
   }
 }
 
-@media (max-width: 799px) and (min-width: 200px) {
+@media (max-width: 784px) and (min-width: 200px){
   body {
       background-image: url(../images/cloud.png), url(../images/cloud.png);
       background-repeat: no-repeat, no-repeat, no-repeat;
@@ -155,15 +155,16 @@ body {
   }
 
 .main {
-  padding: 2% 0 2% 0;
+  padding: 10% 0;
 }
 
 .hi {
-  font-size: 6em
+  font-size: 7em;
+  margin: 2%;
 }
 
 .intro {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .main img {
@@ -173,26 +174,80 @@ body {
 
   .main ul {
     flex-direction: column;
-    margin: 0 20%;
+    margin: 5% 20% 0 20%;
   }
 
   .main ul li {
     width: 100%;
-    font-size: 1.5em;
-
+    font-size: 2em;
+    margin-top: 8%;
+    margin-bottom: 4%;
   }
 
   .footer {
-    padding: 2%;
+    padding: 5%;
   }
 
   .footer p {
     font-size: 1.20em;
-      margin: 2% 1% 0 1%;
+      margin: 2.5% 1% 0 1%;
   }
 
   .fa {
-    padding: 2% 1%;
-    width: 7%;
+    padding: 3% 1%;
+    width: 8%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 785px) and (orientation: portrait) {
+  body {
+      background-image: url(../images/cloud.png), url(../images/cloud.png);
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 30% 25%, 70% 25%;
+      background-size: 25%;
+  }
+
+.main {
+  padding: 10% 0;
+}
+
+.hi {
+  font-size: 7em;
+  margin: 2%;
+}
+
+.intro {
+  font-size: 2em;
+}
+
+.main img {
+  width: 30%;
+  margin: 0 0 5% 35%;
+}
+
+  .main ul {
+    flex-direction: column;
+    margin: 5% 20% 0 20%;
+  }
+
+  .main ul li {
+    width: 100%;
+    font-size: 2em;
+    margin-top: 8%;
+    margin-bottom: 4%;
+  }
+
+  .footer {
+    padding: 5%;
+  }
+
+  .footer p {
+    font-size: 1.20em;
+      margin: 2.5% 1% 0 1%;
+  }
+
+  .fa {
+    padding: 3% 1%;
+    width: 8%;
   }
 }
