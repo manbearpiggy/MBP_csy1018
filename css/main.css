@@ -1,3 +1,5 @@
+/* Name: Aatish Dubey | UN ID: 15444352 */
+
 body {
     margin: 0;
     font-family: 'PT Sans Narrow', arial;
@@ -30,7 +32,9 @@ body {
 
 .main img {
   width: 15%;
-  border-radius: 130px;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px #198dc3;
+  border-radius: 140px;
   margin: 0 0 5% 42.5%;
 }
 
