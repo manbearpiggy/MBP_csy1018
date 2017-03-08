@@ -4,20 +4,21 @@ body {
     margin: 0;
     font-family: 'PT Sans Narrow', arial;
     color: white;
+    background: #198dc3;
+    font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+    font-size-adjust: 0.5;
+}
+
+.main {
+    padding: 2% 0;
     background: #43b3e7;
     background-image: url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 5% 40%, 30% 30%, 70% 30%, 95% 40%;
     background-size: 20%;
-    font-size: 100%;
-}
-
-body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
-  font-size-adjust: 0.5;
-}
-
-.main {
-    padding: 2% 0;
 }
 
 .hi {
@@ -27,7 +28,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 .main div {
-  text-align: center;
+    text-align: center;
 }
 
 .intro {
@@ -35,13 +36,12 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 .main img {
-  width: 15%;
-  border: 1px solid white;
-  box-shadow: 5px 5px 5px #198dc3;
-  border-radius: 140px;
-  margin: 0 0 5% 42.5%;
+    width: 15%;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px #198dc3;
+    border-radius: 140px;
+    margin: 0 0 5% 42.5%;
 }
-
 
 .main ul {
     list-style: none;
@@ -56,12 +56,12 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     width: 25%;
     font-size: 1.5em;
     background: #198dc3;
-    box-shadow: 3px 4px 5px #12678f;
+    box-shadow: 0px 5px #12678f;
     opacity: 0.75;
     cursor: pointer;
     font-weight: 400;
     margin: 6% 0;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     transition: none;
 }
 
@@ -79,19 +79,19 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 .main ul li:active {
-    box-shadow: 2px 3px 2px #12678f;
-    transform: translateY(1px) translateX(1px);
+    box-shadow: 0px 0px 0px #12678f;
+    transform: translate(0px, 5px);
     transition: 0.1s;
 }
 
 .footer {
-    margin: 0;
     display: flex;
     background: #198dc3;
+    padding: 1% 0;
 }
 
-.footer p {
-  font-size: 1.15em;
+.footer h3 {
+    font-size: 1.375em;
     margin: 1.5% 1% 0 1%;
 }
 
@@ -103,159 +103,128 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     text-decoration: none;
     margin: 5px 4px;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px #12678f;
+    box-shadow: 0px 2px #12678f;
+    opacity: 0.8;
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 1;
+    transition: 0.2s;
 }
 
 .fa:active {
-    box-shadow: 1px 1px 1px #12678f;
-    transform: translateY(1px) translateX(1px);
+    box-shadow: 0px 0px 0px #12678f;
+    transform: translate(2px, 2px);
     transition: 0.1s;
 }
 
-
 .fa-linkedin {
-    background: #43b3e7;
+    background: #007bb5;
     color: white;
 }
 
 .fa-facebook {
-    background: #43b3e7;
+    background: #3B5998;
     color: white;
 }
 
-.fa-youtube {
-    background: #43b3e7;
+.fa-twitter {
+    background: #55ACEE;
     color: white;
 }
 
-@media (max-width: 1600px) and (min-width: 1200px) {
-
-  .footer {
-    padding: 1% 0;
-  }
-}
 
 @media (max-width: 1199px) and (min-width: 785px) {
-
-  .main img {
-    margin-top: 2%;
-  }
-
-  .main ul li {
-    margin: 10% 0;
-  }
-
-  .footer {
-    padding: 2% 0;
-  }
+    .main img {
+        margin: 5% 0 5% 40%;
+        width: 20%
+    }
+    .main ul li {
+        margin: 10% 0;
+    }
 }
 
-@media (max-width: 784px) and (min-width: 200px){
-  body {
-      background-image: url(../images/cloud.png), url(../images/cloud.png);
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 30% 25%, 70% 25%;
-      background-size: 25%;
-  }
+@media (max-width: 784px) and (min-width: 200px) {
 
-.main {
-  padding: 10% 0;
-}
-
-.hi {
-  font-size: 7em;
-  margin: 2%;
-}
-
-.intro {
-  font-size: 2em;
-}
-
-.main img {
-  width: 30%;
-  margin: 0 0 5% 35%;
-}
-
-  .main ul {
-    flex-direction: column;
-    margin: 5% 20% 0 20%;
-  }
-
-  .main ul li {
-    width: 100%;
-    font-size: 2em;
-    margin-top: 8%;
-    margin-bottom: 4%;
-  }
-
-  .footer {
-    padding: 5%;
-  }
-
-  .footer p {
-    font-size: 1.20em;
-      margin: 2.5% 1% 0 1%;
-  }
-
-  .fa {
-    padding: 3% 1%;
-    width: 8%;
-  }
+    .main {
+        padding: 10% 0;
+        background-image: url(../images/cloud.png), url(../images/cloud.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 30% 25%, 70% 25%;
+        background-size: 25%;
+    }
+    .hi {
+        font-size: 7em;
+        margin: 2%;
+    }
+    .intro {
+        font-size: 2em;
+    }
+    .main img {
+        width: 30%;
+        margin: 0 0 5% 35%;
+    }
+    .main ul {
+        flex-direction: column;
+        margin: 5% 20% 0 20%;
+    }
+    .main ul li {
+        width: 100%;
+        font-size: 2em;
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
+    .footer {
+        padding: 5%;
+    }
+    .footer h3 {
+        padding-top: 1%;
+    }
+    .fa {
+        padding: 3% 1%;
+        width: 8%;
+    }
 }
 
 @media (max-width: 1199px) and (min-width: 785px) and (orientation: portrait) {
-  body {
-      background-image: url(../images/cloud.png), url(../images/cloud.png);
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: 30% 25%, 70% 25%;
-      background-size: 25%;
-  }
-
-.main {
-  padding: 10% 0;
-}
-
-.hi {
-  font-size: 7em;
-  margin: 2%;
-}
-
-.intro {
-  font-size: 2em;
-}
-
-.main img {
-  width: 30%;
-  margin: 0 0 5% 35%;
-}
-
-  .main ul {
-    flex-direction: column;
-    margin: 5% 20% 0 20%;
-  }
-
-  .main ul li {
-    width: 100%;
-    font-size: 2em;
-    margin-top: 8%;
-    margin-bottom: 4%;
-  }
-
-  .footer {
-    padding: 5%;
-  }
-
-  .footer p {
-    font-size: 1.20em;
-      margin: 2.5% 1% 0 1%;
-  }
-
-  .fa {
-    padding: 3% 1%;
-    width: 8%;
-  }
+    body {
+        background-image: url(../images/cloud.png), url(../images/cloud.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 30% 25%, 70% 25%;
+        background-size: 25%;
+    }
+    .main {
+        padding: 10% 0;
+    }
+    .hi {
+        font-size: 7em;
+        margin: 2%;
+    }
+    .intro {
+        font-size: 2em;
+    }
+    .main img {
+        width: 30%;
+        margin: 0 0 5% 35%;
+    }
+    .main ul {
+        flex-direction: column;
+        margin: 5% 20% 0 20%;
+    }
+    .main ul li {
+        width: 100%;
+        font-size: 2em;
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
+    .footer {
+        padding: 5%;
+    }
+    .footer h3 {
+        margin: 2.5% 1% 0 1%;
+    }
+    .fa {
+        padding: 3% 1%;
+        width: 8%;
+    }
 }

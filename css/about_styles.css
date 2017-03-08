@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans Narrow', arial;
+    color: white;
+    background: #198dc3;
+    font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+    font-size-adjust: 0.5;
+}
+
+h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364;
+}
+
+.header {
+    padding: 0;
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    width: 25%;
+    font-size: 1.5em;
+    background: #198dc3;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0;
+    transition: none;
+    text-align: center;
+}
+
+.navbutton {
+    padding: 5%;
+    opacity: 0.5;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbutton:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.nav li a div:active {
+    transform: translate(1px, 1px);
+    transition: 0.1s;
+}
+
+.about {
+    background: #43b3e7;
+    opacity: 1;
+}
+
+.main {
+    background: #43b3e7;
+    margin: 0 .5%;
+    padding: 5% 0;
+    border-radius: 5px;
+    background-image: url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 35%, 30% 10%, 70% 10%, 100% 35%;
+    background-size: 20%;
+}
+
+.section {
+    background: white;
+    margin: 0% 10%;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 5% 5%;
+    font-size: 1em;
+    line-height: 1.25;
+    box-shadow: 2px 2px 20px #198dc3;
+}
+
+.article_title h2 {
+    text-align: center;
+    font-size: 1.625em;
+    color: white;
+    line-height: 1.15384615;
+    margin-bottom: 2%;
+    text-shadow: 1px 1px 1px #198dc3;
+}
+
+.paragraph1, .paragraph2 {
+    color: #105b7e;
+    font-size: 1em;
+}
+
+.footer {
+    margin: 0;
+    display: flex;
+    background: #198dc3;
+    padding: 2% 0;
+}
+
+.footer p {
+    font-size: 1.15em;
+    margin: 1.5% 1% 0 1%;
+}
+
+.fa {
+    padding: 1.5%;
+    font-size: 1em;
+    width: 2%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 4px;
+    border-radius: 5px;
+    box-shadow: 0px 2px #12678f;
+    opacity: 0.8;
+}
+
+.fa:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.fa:active {
+    box-shadow: 0px 0px 0px #12678f;
+    transform: translate(0px, 2px);
+    transition: 0.1s;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+@media (max-width: 1199px) and (min-width: 785px) {
+  .main {
+    padding: 10% 0;
+  }
+}
+
+@media (max-width: 784px) and (min-width: 200px) {
+  
+}
