@@ -18,7 +18,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 .title_text {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 2em;
   line-height: 1.25;
   margin: 0;
@@ -206,7 +206,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 @media (max-width: 1199px) and (min-width: 785px) and (orientation: portrait) {
     body {
         background-image: url(../images/cloud.png), url(../images/cloud.png);
-        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-repeat: no-repeat, no-repeat;
         background-position: 30% 25%, 70% 25%;
         background-size: 25%;
     }
