@@ -1,3 +1,5 @@
+/* Name: Aatish Dubey | UN ID: 15444352 */
+
 body {
     margin: 0;
     font-family: 'PT Sans Narrow', arial;
@@ -17,6 +19,7 @@ h3 {
 
 .header {
     padding: 0;
+    margin: 0 0.5%;
 }
 
 .header .nav {
@@ -55,11 +58,11 @@ h3 {
 }
 
 .nav li a div:active {
-    transform: translate(1px, 1px);
+    transform: translate(0px, 1px);
     transition: 0.1s;
 }
 
-.about {
+.navactive {
     background: #43b3e7;
     opacity: 1;
 }
@@ -68,7 +71,7 @@ h3 {
     background: #43b3e7;
     margin: 0 .5%;
     padding: 5% 0;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
     background-image: url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 35%, 30% 10%, 70% 10%, 100% 35%;
@@ -78,27 +81,62 @@ h3 {
 .section {
     background: white;
     margin: 0% 10%;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.75);
     border-radius: 5px;
     padding: 5% 5%;
     font-size: 1em;
     line-height: 1.25;
     box-shadow: 2px 2px 20px #198dc3;
+    color: #1780b2;
 }
+
+
+.cv_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cv_section div {
+  width: 50%;
+  text-align: left;
+  padding: 0 2%;
+}
+
 
 .article_title h2 {
     text-align: center;
     font-size: 1.625em;
-    color: white;
+    color: #1780b2;
     line-height: 1.15384615;
     margin-bottom: 2%;
-    text-shadow: 1px 1px 1px #198dc3;
 }
 
-.paragraph1, .paragraph2 {
-    color: #105b7e;
+.paragraph_about {
     font-size: 1em;
 }
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.sendbutton {
+  background-color: #4CAF50;
+  border: none;
+  width: 30%;
+  color: white;
+  margin: 1% 0 0 0;
+  padding: 2% 2%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+}
+
 
 .footer {
     margin: 0;
@@ -157,5 +195,5 @@ h3 {
 }
 
 @media (max-width: 784px) and (min-width: 200px) {
-  
+
 }
