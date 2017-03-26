@@ -37,15 +37,13 @@
     <div class="main">
         <div class="section contact">
             <p class="contact_paragraph">Would you like to say something to me? Use this form to leave me an email!</p>
-            <div class="contact_form">
-                <div class="row1_input">
-                    <input type="text" name="Name" class="namefield" placeholder="Name"><br>
-                    <input type="text" name="Email" class="emailfield" placeholder="Email">
-                </div>
-                <input type="text" name="Subject" class="subjectfield" placeholder="Subject">
-                <input type="text" name="Message" class="messagefield" Placeholder="Enter message here.">
-                <button type="button" class="sendbutton" name="Send">Send</button>
-            </div>
+            <div class="form"><form id="contact_form">
+                Your Name: <br><input type="text" name="Name" class="namefield"><br>
+                Your Email: <br><input type="text" name="Email" class="emailfield"><br>
+                Subject: <br><input type="text" name="Subject" class="subjectfield"><br>
+                Message: <br><input type="text" name="Message" class="messagefield">
+                <input id="sendbutton" type="submit" value="Send email" />
+            </form></div>
 
         </div>
 
