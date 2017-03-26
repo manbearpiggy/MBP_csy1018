@@ -113,6 +113,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     transition: 0.1s;
 }
 
+
 .footer {
     display: flex;
     padding: 1% 0;
@@ -179,7 +180,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     .main {
         padding: 5% 0 10% 0;
         background-image: url(../images/cloud.png), url(../images/cloud.png);
-        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-repeat: no-repeat, no-repeat;
         background-position: 30% 25%, 70% 25%;
         background-size: 25%;
     }
