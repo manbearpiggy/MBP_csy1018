@@ -133,17 +133,21 @@ h3 {
     width: 50%;
 }
 
+
 #contact_form input {
     width: 60%;
+}
+
+textarea {
+  width: 60%;
 }
 
 #sendbutton {
     background-color: #4CAF50;
     border: none;
-    width: 30%;
     color: white;
     margin: 1% 0 0 0;
-    padding: 2% 2%;
+    padding: 3%;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -218,6 +222,7 @@ h3 {
     }
     .button1 {
         display: block;
+        background: #198dc3;
     }
     .menu {
         display: block;
@@ -252,6 +257,16 @@ h3 {
         list-style: none;
         padding: 0 1%;
     }
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact p, .form {
+        width: 100%;
+    }
+    #sendbutton {
+        margin-left: 20%;
+    }
 }
 
 @media (max-width: 784px) and (min-width: 200px) {
@@ -274,6 +289,7 @@ h3 {
     }
     .button1 {
         display: block;
+        background: #198dc3;
     }
     .menu {
         display: block;
@@ -307,6 +323,16 @@ h3 {
     .cv_section div ul {
         list-style: none;
         padding: 0 1%;
+    }
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact p, .form {
+        width: 100%;
+    }
+    #sendbutton {
+        margin-left: 20%;
     }
 }
 
@@ -356,5 +382,15 @@ h3 {
     .cv_section div ul {
         list-style: none;
         padding: 0 1%;
+    }
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact p, .form {
+        width: 100%;
+    }
+    #sendbutton {
+        margin-left: 20%;
     }
 }
