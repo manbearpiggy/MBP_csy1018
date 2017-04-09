@@ -53,7 +53,7 @@ header {
     transition: 1s;
 }
 .hi { /*Adding styles to the 'Hi!' text*/
-    font-family: 'Yanone Kaffeesatz', 'PT Sans narrow', arial; /*Yanone Kaffeesatz and PT Sans narrow font-family retrieved from fonts.google.com*/
+    font-family: 'Yanone Kaffeesatz', arial; /*Yanone Kaffeesatz and PT Sans narrow font-family retrieved from fonts.google.com*/
     margin-bottom: 1%;
     cursor: default;
     text-align: center;
