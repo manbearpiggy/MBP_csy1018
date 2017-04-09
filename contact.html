@@ -44,11 +44,12 @@
     <div class="main">
         <div class="section contact">
             <p class="contact_paragraph">Would you like to say something to me? Use this form to leave me an email!</p>
-            <div class="form"><form id="contact_form">
-                Your Name: <br><input type="text" name="Name" class="namefield"><br>
-                Your Email: <br><input type="text" name="Email" class="emailfield"><br>
-                Subject: <br><input type="text" name="Subject" class="subjectfield"><br>
-                Message: <br><textarea name="message" rows="8" cols="80"></textarea>
+            <div class="form"><form id="contact_form" method="post">
+                <label>Your First Name: </label><br><input type="text" name="Name" class="namefield"><br>
+                <label>Your Last Name: </label> <br><input type="text" name="Name" class="namefield"><br>
+                <label>Your Email: </label><br><input type="text" name="Email" class="emailfield"><br>
+                <label>Subject: </label><br><input type="text" name="Subject" class="subjectfield"><br>
+                <label>Message: </label><br><textarea name="message" rows="5" cols="80"></textarea>
                 <input id="sendbutton" type="submit" value="Send email" />
             </form></div>
 
