@@ -1,28 +1,25 @@
 /* Name: Aatish Dubey | UN ID: 15444352 */
 
+/*Setting up a default style for page backgrounds, colours and fonts.*/
 body {
-    margin: 0;
+    margin: 0; /*To remove default margin from body*/
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
     background: #198dc3;
     font-size: 100%;
 }
-
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
     font-size-adjust: 0.5;
 }
-
 h3 {
     font-size: 1.375em;
     line-height: 1.13636364;
 }
-
-.header {
+header {
     padding: 0;
     margin: 0 0.5%;
 }
-
-.header .nav {
+header .nav {  /*Flexing the navigation bar so all items appear in a row with some space between them.*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,45 +27,36 @@ h3 {
     margin: 0;
     padding: 0;
 }
-
-.nav li {
+.nav li {  /*Giving fixed width in percentage to the flex items and other design properties*/
     width: 25%;
     font-size: 1.5em;
-    background: #198dc3;
     cursor: pointer;
-    font-weight: 400;
     margin: 0;
     transition: none;
     text-align: center;
 }
-
-.navbutton {
+.navbutton { /*Giving dynamic sizes to the navigation items along with transition animation*/
     padding: 5%;
     opacity: 0.5;
     transition: 0.3s;
 }
-
-.nav li a {
+.nav li a { /*Removing default styling from anchor tag*/
     text-decoration: none;
     color: white;
 }
-
-.navbutton:hover {
+.navbutton:hover { /*Adding animation to the navigation items when hovered upon by the cursor*/
     opacity: 1;
     transition: 0.3s;
 }
-
-.nav li a div:active {
-    transform: translate(0px, 1px);
+.nav li a div:active { /*Adding animation the the navigation items when clicked on by the cursor*/
+    transform: translate(0px, 1px); /*Making the div inside flex item translate along y-axis to simulate a button press*/
     transition: 0.1s;
 }
-
 .navactive {
     background: #43b3e7;
     opacity: 1;
 }
-
-.main {
+.main { /*Giving various styles and background images to the main section of the webpages*/
     background: #43b3e7;
     margin: 0 .5%;
     padding: 8% 0;
@@ -78,8 +66,7 @@ h3 {
     background-position: 0% 35%, 30% 10%, 70% 10%, 100% 35%;
     background-size: 20%;
 }
-
-.section {
+.section { /*Giving various styles to the sub-section of the webpages*/
     background: white;
     margin: 0% 10%;
     background: rgba(255, 255, 255, 0.75);
@@ -90,27 +77,24 @@ h3 {
     box-shadow: 2px 2px 20px #198dc3;
     color: #1780b2;
 }
-
+/*Styling for the cv page specific contents within the .section div element*/
 .cv_section1, .cv_section2, .cv_section3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .cv_section div {
     width: 50%;
     text-align: left;
     padding: 0 2%;
 }
-
 .list_title {
     font-size: 1.375em;
 }
-
 .list_title_sub {
     font-size: 1.125em;
 }
-
+/*Styling for the about page specific contents within the .section div element*/
 .article_title h2 {
     text-align: center;
     font-size: 1.625em;
@@ -118,30 +102,28 @@ h3 {
     line-height: 1.15384615;
     margin-bottom: 2%;
 }
-
 .paragraph_about {
     font-size: 1em;
+    line-height: 1.25;
 }
-
+/*Styling for the contact page specific contents within the .section div element*/
 .contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 .contact p, .form {
     width: 50%;
 }
-
-
+.contact p {
+  margin: 10% 1%;
+}
 #contact_form input {
     width: 60%;
 }
-
 textarea {
-  width: 60%;
+    width: 60%;
 }
-
 #sendbutton {
     background-color: #4CAF50;
     border: none;
@@ -153,20 +135,19 @@ textarea {
     display: block;
     font-size: 1em;
 }
-
+/*Default styling for the footer part in all webpages*/
 .footer {
     margin: 0;
     display: flex;
     background: #198dc3;
     padding: 3% 0;
 }
-
 .footer p {
     font-size: 1.25em;
     margin: 1.5% 1% 0 1%;
     cursor: default;
 }
-
+/*Styling properties for the social media buttons taken from www.fontawesome.io*/
 .fa {
     padding: 1.5%;
     font-size: 1em;
@@ -179,62 +160,59 @@ textarea {
     opacity: 0.8;
     transition: 0.2s;
 }
-
-.fa:hover {
+.fa:hover { /*Add transition animation to the social media buttons when hovered by cursor.*/
     opacity: 1;
     transition: 0.2s;
 }
-
-.fa:active {
+.fa:active { /*Add translation along y-axis to the social media buttons when clicked, along with a slight transition animation to simulate button press.*/
     box-shadow: 0px 0px 0px #12678f;
     transform: translate(0px, 2px);
     transition: 0.1s;
 }
-
 .fa-linkedin {
     background: #007bb5;
     color: white;
 }
-
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-
 .fa-twitter {
     background: #55ACEE;
     color: white;
 }
-
+/*Custom styles for tablet sized devices and small screen laptops given using media queries for making the website responsive*/
 @media (max-width: 1199px) and (min-width: 785px) {
     .main {
         padding: 10% 0;
     }
-    .header .nav {
+    /*Styles for making a dropdown menu*/
+    header .nav { /*Changing the arrangement of flex items for row to column*/
         flex-direction: column;
     }
-    .nav li {
+    .nav li { /*Making each flex item of full device width*/
         width: 100%;
     }
-    .navbutton {
+    .navbutton { /*Making the navigation items disappear using the display property*/
         padding: 1.5%;
         display: none;
     }
-    .button1 {
+    .button1 { /*Making only the item containing the current page icon visible*/
         display: block;
         background: #198dc3;
     }
-    .menu {
+    .menu { /*Giving content to the .menu div which previously contained nothing*/
         display: block;
         cursor: pointer;
         text-align: center;
     }
-    .menu:before {
+    .menu:before { /*Giving a text description to the .menu div*/
         content: "Menu";
     }
-    .menu:hover .nav li a .navbutton {
+    .menu:hover .nav li a .navbutton { /*making the entire list of navigation items visible when .menu div is hovered over by a mouse*/
         display: block;
     }
+    /*Making the footer look more consistent*/
     .footer p {
         margin: 2% 1% 0 1%;
     }
@@ -242,6 +220,11 @@ textarea {
         padding: 2% 2%;
         width: 2%;
     }
+    /*Changing styles of about page specific contents for better visibility in mobile devices*/
+    .paragraph_about {
+        line-height: 1.375;
+    }
+    /*Changing styles of cv page specific contents for better visibility in mobile devices*/
     .cvtitle {
         text-align: center;
     }
@@ -257,6 +240,7 @@ textarea {
         list-style: none;
         padding: 0 1%;
     }
+    /*Changing styles of contact page specific contents for better visibility in mobile devices*/
     .contact {
         flex-direction: column;
         text-align: center;
@@ -264,44 +248,49 @@ textarea {
     .contact p, .form {
         width: 100%;
     }
+    .contact p {
+      margin: 1.5%;
+    }
     #sendbutton {
         margin-left: 20%;
     }
 }
-
+/*Custom styles for small screen devices such as mobile phones given using media queries for making the website responsive*/
 @media (max-width: 784px) and (min-width: 200px) {
-    .main {
+    .main { /*Increasing the number of background images when in small screen devices*/
         padding: 12% 2%;
         background-image: url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png);
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
         background-position: 0% 45%, 30% 25%, 70% 25%, 100% 45%, 0% 75%, 100% 75%;
         background-size: 20%;
     }
-    .header .nav {
+    /*Styles for making a dropdown menu*/
+    header .nav { /*Changing the arrangement of flex items for row to column*/
         flex-direction: column;
     }
-    .nav li {
+    .nav li { /*Making each flex item of full device width*/
         width: 100%;
     }
-    .navbutton {
+    .navbutton { /*Making the navigation items disappear using the display property*/
         padding: 1.5%;
         display: none;
     }
-    .button1 {
+    .button1 { /*Making only the item containing the current page icon visible*/
         display: block;
         background: #198dc3;
     }
-    .menu {
+    .menu { /*Giving content to the .menu div which previously contained nothing*/
         display: block;
         cursor: pointer;
         text-align: center;
     }
-    .menu:before {
+    .menu:before { /*Giving a text description to the .menu div*/
         content: "Menu";
     }
-    .menu:hover .nav li a .navbutton {
+    .menu:hover .nav li a .navbutton { /*making the entire list of navigation items visible when .menu div is hovered over by a mouse*/
         display: block;
     }
+    /*Making the footer look more consistent*/
     .footer p {
         margin: 3% 1% 0 1%;
     }
@@ -309,6 +298,11 @@ textarea {
         padding: 3% 3%;
         width: 4%;
     }
+    /*Changing styles of about page specific contents for better visibility in mobile devices*/
+    .paragraph_about {
+        line-height: 1.375;
+    }
+    /*Changing styles of cv page specific contents for better visibility in small screen devices*/
     .cvtitle {
         text-align: center;
     }
@@ -324,24 +318,28 @@ textarea {
         list-style: none;
         padding: 0 1%;
     }
+    /*Changing styles of contact page specific contents for better visibility in small screen devices*/
     .contact {
         flex-direction: column;
         text-align: center;
     }
     .contact p, .form {
         width: 100%;
+    }
+    .contact p {
+      margin: 1.5%;
     }
     #sendbutton {
         margin-left: 20%;
     }
 }
-
+/*Custom styles for tablet devices and small screen laptops operating in portrait mode instead of landscape. Codes are mostly similar to small screen devices codes.*/
 @media (max-width: 1199px) and (min-width: 785px) and (orientation: portrait) {
     .navbutton {
         padding: 1.5%;
         display: none;
     }
-    .header .nav {
+    header .nav {
         flex-direction: column;
     }
     .nav li {
@@ -361,6 +359,7 @@ textarea {
     .menu:hover .nav li a .navbutton {
         display: block;
     }
+
     .footer p {
         margin: 3% 1% 0 1%;
     }
@@ -389,6 +388,9 @@ textarea {
     }
     .contact p, .form {
         width: 100%;
+    }
+    .contact p {
+      margin: 1.5%;
     }
     #sendbutton {
         margin-left: 20%;

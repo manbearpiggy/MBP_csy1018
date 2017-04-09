@@ -1,73 +1,71 @@
+<!-- Name: Aatish Dubey | UN ID: 15444352 -->
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Sans+Narrow|Yanone+Kaffeesatz" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8"> <!-- To define the character encoding of the html document as utf-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Optimizing the width of the viewport to match the width of the device being used -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Linking the stylsheet for this page -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Sans+Narrow|Yanone+Kaffeesatz" rel="stylesheet"> <!-- Linking Google's webfonts API to pull in some font families -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Add icon library for social media buttons. Taken from www.fontawesome.io -->
     <title>My Portfolio</title>
 </head>
-
 <body>
-    <div class="header">
-      <div class="menu">
+    <header> <!-- Making a div for the header of the homepage -->
+        <div class="menu"> <!-- Making a navigation bar within the header as class menu -->
+            <ul class="nav"> <!-- Creating an unordered list with class nav holding multiple list items -->
+                <li>
+                    <a href="index.html"> <!-- Clicking on the contents of this anchor tag takes the user to the homepage -->
+                        <div class="navbutton"><img src="images/home.png" alt="Home"></div> <!-- This div is a navigation button for my website. The img tag uses icons provided by www.iconizer.net -->
+                    </a>
 
-
-        <ul class="nav">
-
-            <li>
-
-                <a href="index.html">
-                    <div class="navbutton"><img src="images/home.png" alt="Home"></div>
-                </a>
-
-            </li>
-            <li>
-                <a href="about.html">
-                    <div class="navbutton"><img src="images/man.png" alt="About"></div>
-                </a>
-            </li>
-            <li>
-                <a href="cv.html">
-                    <div class="navbutton navactive button1"><img src="images/cv1.png" alt="CV"></div>
-                </a>
-            </li>
-            <li>
-                <a href="contact.html">
-                    <div class="navbutton"><img src="images/mail.png" alt="contact"></div>
-                </a>
-            </li>
-        </ul>
+                </li>
+                <li>
+                    <a href="about.html"> <!-- Clicking on the contents of this anchor tag takes the user to the about page -->
+                        <div class="navbutton"><img src="images/man.png" alt="About"></div> <!-- This div is a navigation button for my website. The img tag uses icons provided by www.iconizer.net -->
+                    </a>
+                </li>
+                <li>
+                    <a href="cv.html"> <!-- Clicking on the contents of this anchor tag takes the user to the cv page -->
+                        <div class="navbutton navactive button1"><img src="images/cv1.png" alt="CV"></div> <!-- This div is a navigation button for my website. The img tag uses icons provided by www.iconizer.net -->
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html"> <!-- Clicking on the contents of this anchor tag takes the user to the contact page -->
+                        <div class="navbutton"><img src="images/mail.png" alt="contact"></div> <!-- This div is a navigation button for my website. The img tag uses icons provided by www.iconizer.net -->
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="main">
-        <div class="section cvdiv">
+    </header>
+    <div class="main"> <!-- This div with class main is the large section of the webpage between the header and the footer -->
+        <div class="section"> <!-- This div is a section within the main section where information will be displayed for my cv -->
             <h2 class="cvtitle">Curriculum Vitae</h2>
             <div class="cv_section cv_section1">
-                <div class="personal">
-                    <ul><li class="list_title">Personal Information</li>
-                    <li>Name: Aatish Dubey</li>
-                    <li>Address: Kaldhara</li>
-                    <li>Kathmandu, Nepal</li>
-                    <li>Phone number: +977-9823441345</li>
-                    <li>E-mail: atsh_dubey@live.com</li>
-                    <li>Nationality: Nepali</li>
-                    <li>Date of Birth: 27.11.1995</li>
+                <div class="personal"> <!-- The div for my personal information -->
+                    <ul>
+                        <li class="list_title">Personal Information</li>
+                        <li>Name: Aatish Dubey</li>
+                        <li>Address: Kaldhara</li>
+                        <li>Kathmandu, Nepal</li>
+                        <li>Phone number: +977-9823441345</li>
+                        <li>E-mail: atsh_dubey@live.com</li>
+                        <li>Nationality: Nepali</li>
+                        <li>Date of Birth: 27.11.1995</li>
                     </ul>
                 </div>
-                <div class="education">
-                    <ul><li class="list_title">Education</li>
-                      <li>The Chandbagh School (CBSE) 2001-2012</li>
-                      <li>Xavier Academy Higher Secondary School (HSEB) 2012-2014</li>
-                      <li>Naaya Aayam Multi-Disciplinary Institute (BSc Computing) 2017-2019</li>
+                <div class="education"> <!-- The div for my education information -->
+                    <ul>
+                        <li class="list_title">Education</li>
+                        <li>The Chandbagh School (CBSE) 2001-2012</li>
+                        <li>Xavier Academy Higher Secondary School (HSEB) 2012-2014</li>
+                        <li>Naaya Aayam Multi-Disciplinary Institute (BSc Computing) 2017-2019</li>
                     </ul>
                 </div>
             </div>
-
             <div class="cv_section cv_section2">
-                <div class="coursework">
-                    <ul><li class="list_title">Enrolled Course and Modules</li>
+                <div class="coursework"> <!-- The div for information about my course-->
+                    <ul>
+                        <li class="list_title">Enrolled Course and Modules</li>
                         <li class="list_title_sub">BSc (Hons) Computing - Year 1</li>
                         <li>CSY1018 - Web Development</li>
                         <li>Computer Communications</li>
@@ -76,43 +74,41 @@
                         <li>Software Engineering, Computer Systems</li>
                     </ul>
                 </div>
-                <div class="professional">
-                    <ul><li class="list_title">Professional Experience</li>
-                      <li>No working experience so far.</li>
-
+                <div class="professional"> <!-- The div for my professional experience information -->
+                    <ul>
+                        <li class="list_title">Professional Experience</li>
+                        <li>No working experience so far.</li>
                     </ul>
                 </div>
             </div>
             <div class="cv_section cv_section3">
-                <div class="skills">
-                    <ul><li class="list_title">Skills</li>
-                      <li>Public Speaking</li>
-                      <li>Web Design</li>
-                      <li>Proofreading</li>
-                      <li>Critical Thinking</li>
+                <div class="skills"> <!-- The div for my skills information -->
+                    <ul>
+                        <li class="list_title">Skills</li>
+                        <li>Public Speaking</li>
+                        <li>Web Design</li>
+                        <li>Proofreading</li>
+                        <li>Critical Thinking</li>
                     </ul>
                 </div>
-                <div class="activities">
-                    <ul><li class="list_title">Hobbies and Activities</li>
-                      <li>Playing video games</li>
-                      <li>Volunteering in projects</li>
-                      <li>Social Work</li>
-                      <li>Learning</li>
-                      <li>...and so much more!</li>
-
+                <div class="activities"> <!-- The div for my hobbies and activities information -->
+                    <ul>
+                        <li class="list_title">Hobbies and Activities</li>
+                        <li>Playing video games</li>
+                        <li>Volunteering in projects</li>
+                        <li>Social Work</li>
+                        <li>Learning</li>
+                        <li>...and so much more!</li>
                     </ul>
                 </div>
             </div>
-
         </div>
-
     </div>
-    <div class="footer">
+    <div class="footer"> <!-- Creating the footer part of the webpage -->
         <p>Find me on: </p>
-        <a href="#" target="_blank" class="fa fa-facebook"></a>
-        <a href="#" target="_blank" class="fa fa-linkedin"></a>
-        <a href="#" target="_blank" class="fa fa-twitter"></a>
+        <a href="#" target="_blank" class="fa fa-facebook"></a> <!-- social media button section with class fa and fa-facebook to obtain styles from www.fontawesome.io icon library -->
+        <a href="#" target="_blank" class="fa fa-linkedin"></a> <!-- social media button section with class fa and fa-facebook to obtain styles from www.fontawesome.io icon library -->
+        <a href="#" target="_blank" class="fa fa-twitter"></a> <!-- social media button section with class fa and fa-facebook to obtain styles from www.fontawesome.io icon library -->
     </div>
 </body>
-
 </html>

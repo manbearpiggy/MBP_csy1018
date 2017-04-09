@@ -1,5 +1,5 @@
 /* Name: Aatish Dubey | UN ID: 15444352 */
-
+/*Setting up a default style for page backgrounds, colours and fonts.*/
 body {
     margin: 0;
     font-family: 'PT Sans Narrow', arial;
@@ -7,74 +7,64 @@ body {
     background: #198dc3;
     font-size: 100%;
 }
-
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
     font-size-adjust: 0.5;
 }
-.header {
-  text-align: center;
-  background: #43b3e7;
+header {
+    text-align: center;
+    background: #43b3e7;
 }
-
 .title_text {
-  font-family: 'Open Sans Condensed', serif;
-  font-size: 2em;
-  line-height: 1.25;
-  margin: 0;
-  padding: 1% 0;
-  opacity: 0.8;
-  transition: 0.1s;
-  cursor: default;
+    font-family: 'Open Sans Condensed', serif; /*Open Sans Condensed font-family retrieved from fonts.google.com*/
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0;
+    padding: 1% 0;
+    opacity: 0.8;
+    transition: 0.1s; /*adding transition animation to the text in header when cursor isn't hovering over it*/
+    cursor: default;
 }
-
-.title_text:hover {
-  opacity: 1;
-  transition: 0.1s;
+.title_text:hover { /*Adding transition animation to the header text when cursor is hovering over it*/
+    opacity: 1;
+    transition: 0.1s;
 }
-
-.main {
+/*Styles for the items within the .main section*/
+.main {  /*Adding background images to the main section of the homepage*/
     padding: 2% 0;
     background: #43b3e7;
     background-image: url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png), url(../images/cloud.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 5% 40%, 30% 30%, 70% 30%, 95% 40%;
     background-size: 20%;
-
 }
-
-.main div {
+.main div { /*Making the items within the main section of the webpage aligned to the center*/
     text-align: center;
 }
-
-.main img {
+.main img { /*Adding styles to my picture to make it rounded*/
     width: 15%;
     border: 1px solid white;
     box-shadow: 0px 5px 5px #198dc3;
     border-radius: 140px;
     margin: 0 0 3% 42.5%;
-    transition: 0.5s;
+    transition: 0.5s; /*adding transition animation to the image when cursor isn't hovering over it*/
 }
-
-.image:hover {
-    transform: scale(1.15, 1.15);
+.image:hover { /*Adding transition animation to the image when cursor is hovering over it*/
+    transform: scale(1.15, 1.15); /*Making the image scale bigger along x and y axes when hovered*/
     transition: 1s;
 }
-
-.hi {
-    font-family: 'Yanone Kaffeesatz', 'PT Sans narrow', arial;
+.hi { /*Adding styles to the 'Hi!' text*/
+    font-family: 'Yanone Kaffeesatz', 'PT Sans narrow', arial; /*Yanone Kaffeesatz and PT Sans narrow font-family retrieved from fonts.google.com*/
     margin-bottom: 1%;
     cursor: default;
     text-align: center;
     font-size: 4em;
     line-height: 1.25;
 }
-
-.intro {
+.intro { /*Adding styles to the introduction text*/
     font-size: 1.25em;
     cursor: default;
 }
-
-.main ul {
+.main ul {/*making the navigation items within the .main section into flex items arranged in a row with space between them*/
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -82,51 +72,44 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     margin: 0% 15%;
     padding: 0;
 }
-
-.main ul li {
+.main ul li { /*Providing styles to the navigation buttons*/
     width: 25%;
     font-size: 1.5em;
     background: #198dc3;
     box-shadow: 0px 3px 0px #12678f;
-    opacity: 0.75;
+    opacity: 0.75; /*Making the navigation buttons slightly transparent*/
     cursor: pointer;
     font-weight: 400;
     margin: 6% 0;
     border-radius: 0 0 5px 5px;
     transition: none;
 }
-
 .button {
     padding: 7.5% 0;
 }
-
 .main ul li a {
     text-decoration: none;
     color: white;
 }
-
-.main ul li:hover {
+.main ul li:hover { /*Making the navigation buttons opaque when hovered */
     opacity: 1;
 }
-
-.main ul li:active {
+.main ul li:active { /*Providing transition animation and making the navigation buttons translate along the y-axis and removing the box shadows to simulate a button press effect*/
     box-shadow: 0px 0px 0px #12678f;
     transform: translate(0px, 3px);
     transition: 0.1s;
 }
-
-
-.footer {
+/*Styling for the footer part of the homepage*/
+.footer { /*Making the footer a flex with items arranged in a row*/
     display: flex;
     padding: 1% 0;
 }
-
 .footer p {
     font-size: 1.25em;
     margin: 1.5% 1% 0 1%;
     cursor: default;
 }
-
+/*Styling properties for the social media buttons taken from www.fontawesome.io*/
 .fa {
     padding: 1.5%;
     font-size: 1em;
@@ -139,34 +122,28 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     opacity: 0.8;
     transition: 0.2s;
 }
-
-.fa:hover {
+.fa:hover { /*Add transition animation to the social media buttons when hovered by cursor.*/
     opacity: 1;
     transition: 0.2s;
 }
-
-.fa:active {
+.fa:active { /*Add translation along y-axis to the social media buttons when clicked, along with a slight transition animation to simulate button press.*/
     box-shadow: 0px 0px 0px #12678f;
     transform: translate(2px, 2px);
     transition: 0.1s;
 }
-
 .fa-linkedin {
     background: #007bb5;
     color: white;
 }
-
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-
 .fa-twitter {
     background: #55ACEE;
     color: white;
 }
-
-
+/*Custom styles for tablet sized devices and small screen laptops given using media queries for making the website responsive*/
 @media (max-width: 1199px) and (min-width: 785px) {
     .main img {
         margin: 5% 0 5% 40%;
@@ -176,16 +153,16 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
         margin: 10% 0;
     }
 }
-
+/*Custom styles for small screen devices such as mobile phones given using media queries for making the website responsive*/
 @media (max-width: 784px) and (min-width: 200px) {
-
-    .main {
+    .main { /*Reducing the number of background inmages to two from from while viewing in small screen devices*/
         padding: 5% 0 10% 0;
         background-image: url(../images/cloud.png), url(../images/cloud.png);
         background-repeat: no-repeat, no-repeat;
         background-position: 30% 25%, 70% 25%;
         background-size: 25%;
     }
+    /*Increasing font sizes for texts*/
     .hi {
         font-size: 4em;
         margin: 2%;
@@ -193,20 +170,21 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     .intro {
         font-size: 1.35em;
     }
-    .main img {
+    .main img { /*increasing size of image*/
         width: 30%;
         margin: 0 0 5% 35%;
     }
-    .main ul {
+    .main ul { /*Changing the arrangement of flex items to column*/
         flex-direction: column;
         margin: 5% 20% 0 20%;
     }
-    .main ul li {
+    .main ul li { /*Increasing width of flex items to full device width*/
         width: 100%;
         font-size: 1.5em;
         margin-top: 5%;
         margin-bottom: 4%;
     }
+    /*Making the footer part more consistent and responsive*/
     .footer {
         padding: 5%;
     }
@@ -218,9 +196,9 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
         width: 8%;
     }
 }
-
+/*Custom styles for tablet devices and small screen laptops operating in portrait mode instead of landscape. Codes are mostly similar to small screen devices codes.*/
 @media (max-width: 1199px) and (min-width: 785px) and (orientation: portrait) {
-    body {
+    body { /*Reducing the number of background inmages to two from from while viewing in portrait mode instead of landscape*/
         background-image: url(../images/cloud.png), url(../images/cloud.png);
         background-repeat: no-repeat, no-repeat;
         background-position: 30% 25%, 70% 25%;
